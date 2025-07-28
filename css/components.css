@@ -182,11 +182,11 @@
 .nav-link {
   color: var(--lexpoint-gray-700);
   text-decoration: none;
-  font-weight: var(--font-weight-medium);
-  font-size: 0.9rem;
+  font-weight: var(--font-weight-regular);
+  font-size: 0.875rem;
   transition: color var(--transition-fast);
   position: relative;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 .nav-link:hover {
@@ -253,7 +253,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #ff0000 0%, #ff6600 100%);
+  background: linear-gradient(135deg, var(--lexpoint-primary) 0%, #4a03e6 100%);
   color: var(--lexpoint-white);
   position: relative;
   overflow: hidden;
@@ -280,22 +280,22 @@
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: var(--font-weight-light);
   margin-bottom: var(--space-6);
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  font-weight: var(--font-weight-regular);
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-light);
   margin-bottom: var(--space-8);
-  opacity: 0.8;
-  max-width: 500px;
+  opacity: 0.85;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .hero-actions {
@@ -307,11 +307,11 @@
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   
   .hero-subtitle {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   
   .hero-actions {
@@ -334,11 +334,11 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: var(--font-weight-light);
   color: var(--lexpoint-gray-900);
   margin-bottom: var(--space-4);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .section-subtitle {
@@ -407,7 +407,7 @@
 }
 
 .feature-title {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-medium);
   color: var(--lexpoint-gray-900);
   margin-bottom: var(--space-3);
@@ -417,7 +417,7 @@
 .feature-description {
   color: var(--lexpoint-gray-600);
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
 }
 
 /* ========================================
