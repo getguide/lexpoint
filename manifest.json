@@ -1,0 +1,25 @@
+{
+  "name": "Lexpoint.io - Canada's Leading Legal Technology Platform",
+  "short_name": "Lexpoint",
+  "description": "Revolutionizing Canada's legal industry with innovative technology solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#5404FF",
+  "theme_color": "#5404FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/brand/logos/accent/Logo-Square-Accent.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/brand/logos/accent/Logo-Square-Accent.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "productivity", "legal"],
+  "lang": "en-CA",
+  "dir": "ltr"
+} 
