@@ -167,8 +167,7 @@
 .navbar-logo {
   height: 40px;
   width: auto;
-  max-width: 400px !important; /* Increased to show full logo including .io */
-  border: 2px solid red; /* Temporary debug border */
+  max-width: 400px; /* Increased to show full logo including .io */
 }
 
 .navbar-nav {
