@@ -165,9 +165,9 @@
 }
 
 .navbar-logo {
-  height: 40px;
+  height: 32px;
   width: auto;
-  max-width: 400px; /* Increased to show full logo including .io */
+  max-width: 180px;
 }
 
 .navbar-nav {
@@ -182,9 +182,11 @@
 .nav-link {
   color: var(--lexpoint-gray-700);
   text-decoration: none;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-medium);
+  font-size: 0.9rem;
   transition: color var(--transition-fast);
   position: relative;
+  letter-spacing: 0.01em;
 }
 
 .nav-link:hover {
@@ -271,27 +273,29 @@
 .hero-container {
   position: relative;
   z-index: 1;
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 auto;
   padding: var(--space-8) var(--space-6);
   text-align: center;
 }
 
 .hero-title {
-  font-size: var(--text-5xl);
-  font-weight: var(--font-weight-bold);
+  font-size: 3.5rem;
+  font-weight: var(--font-weight-light);
   margin-bottom: var(--space-6);
   line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: var(--text-xl);
-  font-weight: var(--font-weight-light);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-regular);
   margin-bottom: var(--space-8);
-  opacity: 0.9;
-  max-width: 600px;
+  opacity: 0.8;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.6;
 }
 
 .hero-actions {
@@ -303,11 +307,11 @@
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: var(--text-4xl);
+    font-size: 2.5rem;
   }
   
   .hero-subtitle {
-    font-size: var(--text-lg);
+    font-size: 1.125rem;
   }
   
   .hero-actions {
@@ -330,17 +334,19 @@
 }
 
 .section-title {
-  font-size: var(--text-4xl);
-  font-weight: var(--font-weight-semibold);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-light);
   color: var(--lexpoint-gray-900);
   margin-bottom: var(--space-4);
+  letter-spacing: -0.01em;
 }
 
 .section-subtitle {
-  font-size: var(--text-lg);
+  font-size: 1.125rem;
   color: var(--lexpoint-gray-600);
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* ========================================
@@ -401,15 +407,17 @@
 }
 
 .feature-title {
-  font-size: var(--text-xl);
+  font-size: 1.25rem;
   font-weight: var(--font-weight-medium);
   color: var(--lexpoint-gray-900);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.01em;
 }
 
 .feature-description {
   color: var(--lexpoint-gray-600);
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 /* ========================================
