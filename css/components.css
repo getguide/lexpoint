@@ -182,7 +182,7 @@
 .nav-link {
   color: var(--lexpoint-gray-700);
   text-decoration: none;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-regular);
   transition: color var(--transition-fast);
   position: relative;
 }
@@ -279,7 +279,7 @@
 
 .hero-title {
   font-size: var(--text-5xl);
-  font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-6);
   line-height: 1.1;
 }
@@ -331,7 +331,7 @@
 
 .section-title {
   font-size: var(--text-4xl);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   color: var(--lexpoint-gray-900);
   margin-bottom: var(--space-4);
 }
@@ -402,7 +402,7 @@
 
 .feature-title {
   font-size: var(--text-xl);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   color: var(--lexpoint-gray-900);
   margin-bottom: var(--space-4);
 }
@@ -432,7 +432,7 @@
 }
 
 .testimonial-author {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   color: var(--lexpoint-gray-900);
 }
 
@@ -466,7 +466,7 @@
 
 .footer-section h3 {
   font-size: var(--text-lg);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   margin-bottom: var(--space-4);
 }
 
