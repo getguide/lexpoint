@@ -167,14 +167,7 @@
 .navbar-logo {
   height: 40px;
   width: auto;
-  max-width: 200px;
-}
-
-.logo-io {
-  color: var(--lexpoint-primary);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--text-lg);
-  margin-left: 2px;
+  max-width: 300px; /* Increased to show full logo including .io */
 }
 
 .navbar-nav {
