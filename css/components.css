@@ -170,6 +170,13 @@
   max-width: 200px;
 }
 
+.logo-io {
+  color: var(--lexpoint-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-lg);
+  margin-left: 2px;
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;
