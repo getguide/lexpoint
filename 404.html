@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Lexpoint.io</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Lexpoint.io's homepage.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/brand/logos/accent/Logo-Favicon-Accent.svg">
+    <link rel="icon" type="image/png" href="assets/brand/logos/accent/Logo-Favicon-Accent.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/brand-system.css?v=11">
+    <link rel="stylesheet" href="css/components.css?v=11">
+    <link rel="stylesheet" href="css/main.css?v=11">
+    
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 2rem;
+        }
+        
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--lexpoint-primary);
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--lexpoint-gray-900);
+            margin-bottom: 1rem;
+        }
+        
+        .error-message {
+            font-size: 1.125rem;
+            color: var(--lexpoint-gray-600);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--lexpoint-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .home-link:hover {
+            transform: translateY(-2px);
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <img src="assets/brand/logos/accent/Logo-Full-Accent.svg" alt="Lexpoint.io" class="logo">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-message">
+                The page you're looking for doesn't exist or has been moved. 
+                Don't worry, you can always find your way back to our homepage.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Go Home</a>
+                <a href="/#products" class="btn btn-outline">Explore Products</a>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="/" class="home-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Lexpoint.io
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

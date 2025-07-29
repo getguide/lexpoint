@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.lexpoint.io/sitemap.xml
+
+# Disallow any admin or private areas (if any exist in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all CSS, JS, and assets
+Allow: /css/
+Allow: /js/
+Allow: /assets/ 
