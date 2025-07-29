@@ -735,4 +735,62 @@ a:hover {
 .contact-card:hover .contact-email {
   color: #5404FF !important;
   transform: scale(1.02);
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #5404FF 0%, #6b21a8 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(84, 4, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  z-index: 1000;
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(84, 4, 255, 0.4);
+  background: linear-gradient(135deg, #6b21a8 0%, #5404FF 100%);
+}
+
+.back-to-top-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(84, 4, 255, 0.5);
+}
+
+.back-to-top-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.back-to-top-btn:hover svg {
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
 } 

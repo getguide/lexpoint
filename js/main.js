@@ -17,6 +17,7 @@ function initializeApp() {
     setupParallaxEffects();
     setupFormHandling();
     setupPerformanceOptimizations();
+    setupBackToTop();
 }
 
 // ========================================
@@ -318,6 +319,52 @@ function setupPerformanceOptimizations() {
         scrollTimeout = setTimeout(() => {
             // Handle scroll-based operations here
         }, 16); // ~60fps
+    });
+}
+
+// ========================================
+// BACK TO TOP BUTTON
+// ========================================
+
+function setupBackToTop() {
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    if (!backToTopBtn) return;
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', throttle(() => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    }, 100));
+    
+    // Smooth scroll to top when clicked
+    backToTopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Smooth scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        
+        // Track the event
+        trackEvent('back_to_top_click', {
+            scroll_position: window.pageYOffset,
+            page: window.location.pathname
+        });
+    });
+    
+    // Keyboard support
+    backToTopBtn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            backToTopBtn.click();
+        }
     });
 }
 
