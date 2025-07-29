@@ -735,6 +735,10 @@ a:hover {
 .contact-card:hover .contact-email {
   color: #5404FF !important;
   transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: 0 4px 12px rgba(84, 4, 255, 0.2);
 }
 
 /* Back to Top Button */
