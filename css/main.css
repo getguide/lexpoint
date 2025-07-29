@@ -66,6 +66,34 @@ a:hover {
    ANIMATIONS - REVOLUTIONARY EFFECTS
    ======================================== */
 
+/* Brand Hover Effects for Cards */
+.card.feature:hover .hover-border {
+  border-color: #5404FF !important;
+  box-shadow: 0 0 20px rgba(84, 4, 255, 0.3);
+}
+
+.card.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(84, 4, 255, 0.15);
+}
+
+.card.feature:hover .feature-icon > div {
+  background: linear-gradient(135deg, rgba(84, 4, 255, 0.1) 0%, rgba(84, 4, 255, 0.2) 100%) !important;
+  border-color: rgba(84, 4, 255, 0.4) !important;
+  transform: scale(1.1);
+}
+
+.card.feature:hover .feature-title {
+  color: #5404FF !important;
+  transform: scale(1.02);
+}
+
+.card.feature:hover .btn-primary {
+  background: linear-gradient(135deg, #5404FF 0%, #6b21a8 100%) !important;
+  box-shadow: 0 4px 15px rgba(84, 4, 255, 0.4) !important;
+  transform: translateY(-2px);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
