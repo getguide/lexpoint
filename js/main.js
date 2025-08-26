@@ -29,12 +29,36 @@ function setupNavigation() {
     const navbarToggle = document.getElementById('navbar-toggle');
     const navbarNav = document.getElementById('navbar-nav');
     
-    // Navbar scroll effect
+    // Enhanced navbar scroll effect with light section detection
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const scrollY = window.scrollY;
+        
+        // Add scrolled class
+        if (scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
+        }
+        
+        // Detect if navbar is over light sections
+        const lightSections = document.querySelectorAll('section[style*="background: linear-gradient(135deg, #ffffff"], section[style*="background: linear-gradient(135deg, #f8fafc"]');
+        let isOverLight = false;
+        
+        lightSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const navbarHeight = navbar.offsetHeight;
+            
+            // Check if navbar overlaps with light section
+            if (rect.top <= navbarHeight && rect.bottom >= 0) {
+                isOverLight = true;
+            }
+        });
+        
+        // Apply appropriate styling
+        if (isOverLight && scrollY > 50) {
+            navbar.classList.add('on-light');
+        } else {
+            navbar.classList.remove('on-light');
         }
     });
     
